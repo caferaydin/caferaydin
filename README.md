@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Cafer AYDIN</h1>
 <h3 align="center">Software Developer</h3>
-<p align="center">- 📫 How to reach me **caferaydin@engineer.com** </p>
+<p align="center">- 📫 How to reach me caferaydin@engineer.com </p>
 <p align="center">
  <a href="https://medium.com/@caferaydin" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@caferaydin" height="30" width="40" /></a>
  <a href="https://www.hackerrank.com/caferaydin" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="caferaydin" height="30" width="40" /></a>
