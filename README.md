@@ -2,8 +2,6 @@
   
 <h1 align="center">Hi 👋, I'm Cafer AYDIN</h1>
 
-- 🔭 I’m currently working on [ProgrammingLanguagesProject](https://github.com/ysnesra/ProgrammingLanguagesProject)  
-  
 
 - 🌱 I’m currently learning **Go** 
   
