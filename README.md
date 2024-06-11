@@ -79,10 +79,11 @@
 
 # 📊 GitHub Stats:
 
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=caferaydin&theme=dark&hide_border=false&include_all_commits=true&count_private=true&hide=csharp)
+![GitHub Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=caferaydin&theme=dark&hide_border=false&hide=c++)
+  
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=caferaydin&theme=dark&hide_border=false&include_all_commits=true&count_private=true" alt="GitHub Stats">
-  <br/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=caferaydin&theme=dark&hide_border=false" alt="GitHub Streak Stats">
-  <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=caferaydin&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=caferaydin&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact&exclude_repo=caferaydin/c++&hide=javascript" alt="Top Languages">
 </p>
+
