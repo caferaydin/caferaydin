@@ -1,33 +1,88 @@
-### <div align="center">I'm Backend developer with freelance   
-  
+### <div align="center">I'm a Backend Developer and Freelancer</div>
+
 <h1 align="center">Hi 👋, I'm Cafer AYDIN</h1>
 
-- ❓ Ask me about anything related to **.Net**,**.Net Core** ,**C#** and **Web API** technologies  
-
+<p align="center">Ask me about anything related to .Net, .Net Core, C#, and Web API technologies</p>
 
 <br/>  
+
 # 💫 About Me:
 
-I am developing projects in **.Net**,**.Net Core** ,**C#, C++, Java ** and **Web API** 
-
-
-
-# 💻 Languages and Tools:
- <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a>
-  <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a>
-  <a href="https://www.java.com" rel="nofollow"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40" style="max-width: 100%;"> </a>
- <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>   <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> 
-<a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.postgresql.org" rel="nofollow"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40" style="max-width: 100%;"> </a>   <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://laravel.com/" rel="nofollow"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg" alt="laravel" width="40" height="40" style="max-width: 100%;"> </a> <a href="https://spring.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" width="40" height="40"/> </a> <a href="https://getbootstrap.com" rel="nofollow"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40" style="max-width: 100%;"> </a>
-
-![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens) 
-![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white) 
-![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white) 
-
-
+<p align="center">I am developing projects in .Net, .Net Core, C#, C++, Java, and Web API.</p>
 
 ## 🌐 Socials:
-[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/caferaydin) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/ccaferaydin) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/caferaydin/) 
+
+<p align="center">
+  <a href="https://discord.gg/caferaydin">
+    <img src="https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white" alt="Discord" width="150" height="30">
+  </a>
+  <a href="https://www.instagram.com/ccaferaydin">
+    <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white" alt="Instagram" width="150" height="30">
+  </a>
+  <a href="https://www.linkedin.com/in/caferaydin/">
+    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white" alt="LinkedIn" width="150" height="30">
+  </a>
+</p>
+
+# 💻 Languages and Tools:
+
+<p align="center">
+  
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/csharp/csharp.png" alt="C#" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/java/java.png" alt="Java" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/go/go.png" alt="Go" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/nextjs/nextjs.png" alt="Next.js" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/laravel/laravel.png" alt="Laravel" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/nodejs/nodejs.png" alt="Node.js" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/c/c.png" alt="C" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/cpp/cpp.png" alt="C++" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/ruby/ruby.png" alt="Ruby" width="50" height="50">
+  
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/git/git.png" alt="Git" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/linux/linux.png" alt="Linux" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/docker/docker.png" alt="Docker" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/spring/spring.png" alt="Spring" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/redis/redis.png" alt="Redis" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/redux/redux.png" alt="Redux" width="50" height="50">
+
+  <img src="https://raw.githubusercontent.com/github/explore/96943574ba0c0340ba6ea1e6f768e9abe43e34e1/topics/sql-server/sql-server.png" alt="MSSQL" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/mysql/mysql.png" alt="MySQL" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/postgresql/postgresql.png" alt="PostgreSQL" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/sqlite/sqlite.png" alt="SQLite" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/kubernetes/kubernetes.png" alt="Kubernetes" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/mongodb/mongodb.png" alt="MongoDB" width="50" height="50">
+  
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/postman/postman.png" alt="Postman" width="50" height="50">
+
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/figma/figma.png" alt="Figma" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/flutter/flutter.png" alt="Flutter" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/android/android.png" alt="Android" width="50" height="50">
+
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/react/react.png" alt="React" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/angular/angular.png" alt="Angular" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/nginx/nginx.png" alt="NGINX" width="50" height="50">
+  
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/google-cloud/google-cloud.png" alt="GCP" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/elasticsearch/elasticsearch.png" alt="Elasticsearch" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/aws/aws.png" alt="AWS" width="50" height="50">
+
+  
+
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/html/html.png" alt="HTML5" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/bootstrap/bootstrap.png" alt="Bootstrap" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/javascript/javascript.png" alt="JavaScript" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/bash/bash.png" alt="Bash" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/heroku/heroku.png" alt="Heroku" width="50" height="50">
+  <img src="https://raw.githubusercontent.com/github/explore/main/topics/sass/sass.png" alt="Sass" width="50" height="50">
+  
+</p>
+
 # 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=caferaydin&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=caferaydin&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=caferaydin&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=caferaydin&theme=dark&hide_border=false&include_all_commits=true&count_private=true" alt="GitHub Stats">
+  <br/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=caferaydin&theme=dark&hide_border=false" alt="GitHub Streak Stats">
+  <br/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=caferaydin&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages">
+</p>
