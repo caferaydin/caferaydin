@@ -1,17 +1,24 @@
+{% assign is_en = false %}
+{% if page.lang == 'en' %}{% assign is_en = true %}{% endif %}
+{% assign profile = site.data.profile %}
 <footer class="site-footer">
   <div class="shell footer-inner">
     <section>
-      <p class="eyebrow">Positioning</p>
-      <h2>Cafer Aydin - Software Engineer, System Builder, Product Developer</h2>
-      <p>Official personal brand site focused on engineering credibility, clarity, and execution.</p>
+      <p class="eyebrow">{% if is_en %}Signal{% else %}Signal{% endif %}</p>
+      <h2>{% if is_en %}Backend & distributed systems, shipped end-to-end.{% else %}Backend ve dağıtık sistemler, uçtan uca teslim.{% endif %}</h2>
+      <p>{% if is_en %}Java & .NET. Clean architecture, security practices, operational sustainability.{% else %}Java & .NET. Clean architecture, güvenlik pratikleri ve operasyonel sürdürülebilirlik odağı.{% endif %}</p>
     </section>
     <section>
-      <p class="eyebrow">Planned, Not Published Yet</p>
-      <ul class="compact-list">
-        {% for section in site.data.future-sections.items %}
-          <li>{{ section }}</li>
-        {% endfor %}
+      <p class="eyebrow">{% if is_en %}Reach out{% else %}İletişim{% endif %}</p>
+      <ul class="contact-list" style="margin-top: 0.6rem;">
+        <li><span class="label">email</span><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></li>
+        <li><span class="label">github</span><a href="{{ profile.github }}" target="_blank" rel="noreferrer">{{ profile.github_handle }}</a></li>
+        <li><span class="label">linkedin</span><a href="{{ profile.linkedin }}" target="_blank" rel="noreferrer">{{ profile.linkedin_handle }}</a></li>
       </ul>
     </section>
+  </div>
+  <div class="shell footer-note">
+    <span>© {{ site.time | date: "%Y" }} Cafer Aydın · {{ profile.location }}</span>
+    <span>{% if is_en %}Built with Jekyll · Hosted on GitHub Pages{% else %}Jekyll ile inşa edildi · GitHub Pages üzerinde{% endif %}</span>
   </div>
 </footer>

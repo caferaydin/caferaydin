@@ -1,0 +1,79 @@
+groups:
+  - id: languages
+    title_tr: Diller
+    title_en: Languages
+    items:
+      - Java
+      - C#
+      - Go
+      - PHP
+      - C++
+      - JavaScript
+      - TypeScript
+
+  - id: frameworks
+    title_tr: Framework & Teknolojiler
+    title_en: Frameworks & Technologies
+    items:
+      - Spring Boot
+      - Spring Cloud
+      - Spring Security
+      - JPA / Hibernate
+      - .NET / .NET Core
+      - ASP.NET Core
+      - Angular
+      - React
+
+  - id: architecture
+    title_tr: Backend & Mimari
+    title_en: Backend & Architecture
+    items:
+      - REST API
+      - SOAP
+      - CQRS
+      - MediatR
+      - Clean Architecture
+      - Modular Monolith
+      - Microservices
+      - Event-Driven
+      - Saga
+      - gRPC
+
+  - id: messaging
+    title_tr: Mesajlaşma & Cache
+    title_en: Messaging & Cache
+    items:
+      - RabbitMQ
+      - MassTransit
+      - Redis
+
+  - id: databases
+    title_tr: Veritabanları
+    title_en: Databases
+    items:
+      - PostgreSQL
+      - MS SQL Server
+      - MySQL
+      - MongoDB
+      - T-SQL
+
+  - id: devops
+    title_tr: DevOps & Operasyon
+    title_en: DevOps & Operations
+    items:
+      - Docker
+      - Docker Compose
+      - Linux
+      - Nginx
+      - CI/CD
+      - Environment Config
+
+  - id: tools
+    title_tr: Araçlar
+    title_en: Tools
+    items:
+      - Git
+      - GitHub
+      - Maven
+      - Postman
+      - Swagger

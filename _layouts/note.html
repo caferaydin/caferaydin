@@ -1,0 +1,51 @@
+---
+layout: default
+---
+{% assign is_en = false %}
+{% if page.lang == 'en' %}{% assign is_en = true %}{% endif %}
+{% if is_en %}
+  {% assign back_url = '/en/notes/' %}
+  {% assign back_label = 'All notes' %}
+  {% assign updated_label = 'Updated' %}
+  {% assign reading_label = 'read' %}
+{% else %}
+  {% assign back_url = '/notes/' %}
+  {% assign back_label = 'Tüm notlar' %}
+  {% assign updated_label = 'Güncellendi' %}
+  {% assign reading_label = 'okuma' %}
+{% endif %}
+
+<article class="note-single">
+  <a class="note-back" href="{{ back_url | relative_url }}">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+    {{ back_label }}
+  </a>
+
+  <header class="note-head">
+    <p class="eyebrow">{% if is_en %}Note{% else %}Not{% endif %}</p>
+    <h1>{{ page.title }}</h1>
+    <div class="note-meta">
+      {% if page.date %}
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          {{ page.date | date: "%d %b %Y" }}
+        </span>
+      {% endif %}
+      {% if page.reading_time %}
+        <span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          {{ page.reading_time }} {{ reading_label }}
+        </span>
+      {% endif %}
+      {% if page.tags %}
+        <span class="note-tags">
+          {% for t in page.tags %}<span class="chip">{{ t }}</span>{% endfor %}
+        </span>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="note-body prose">
+    {{ content }}
+  </div>
+</article>

@@ -1,60 +1,105 @@
 ---
-title: Projects
-description: Selected projects structured by scope, problem, role, technologies, and maturity.
+title: Projeler
+description: Nationality Verification, Nakliye360 ve kurumsal projelerden seçili teknik teslimatlar.
 lang: tr
 en_url: /en/projects/
 permalink: /projects/
 ---
 
+{% assign projects = site.data.projects %}
+{% assign experience = site.data.experience %}
+
 <section class="hero">
-  <p class="eyebrow">Projects</p>
-  <h1>Secili projeler ve urun inisiyatifleri</h1>
-  <p class="lead">Bu sayfa galeri degil, teknik guven sinyali veren yapilandirilmis proje ozetlerinden olusur.</p>
+  <p class="eyebrow">Projeler</p>
+  <h1>Seçili projeler ve <span class="gradient">production</span> teslimatları</h1>
+  <p class="lead">Bu sayfa bir galeri değil. Her kart; problem, rol, teknoloji ve olgunluk bilgisiyle birlikte okunabilir bir teknik özet sunar.</p>
 </section>
 
-<div class="grid">
-  <article class="card span-6">
-    <h2>Platform Core Rebuild</h2>
-    <p><strong>What it is:</strong> Coklu servisleri birlestiren cekirdek platform yeniden tasarimi.</p>
-    <p><strong>Problem solved:</strong> Dagitik mimari nedeniyle yavas teslimat ve artis gosteren hata maliyeti.</p>
-    <p><strong>My role:</strong> Architecture ownership, backend implementation leadership.</p>
-    <p><strong>Core technologies:</strong> Node.js, PostgreSQL, message queue, CI/CD.</p>
-    <p><strong>Status / maturity:</strong> Production.</p>
-  </article>
-
-  <article class="card span-6">
-    <h2>Operational Visibility Initiative</h2>
-    <p><strong>What it is:</strong> Uretim ortami gozlemlenebilirlik ve hata analiz katmani.</p>
-    <p><strong>Problem solved:</strong> Kok neden bulma suresinin uzunlugu ve daginik log/metric yapisi.</p>
-    <p><strong>My role:</strong> System design, observability strategy, team enablement.</p>
-    <p><strong>Core technologies:</strong> Python services, Redis, tracing and metrics stack.</p>
-    <p><strong>Status / maturity:</strong> Scaling.</p>
-  </article>
-
-  <article class="card span-6">
-    <h2>Product Workflow Automation</h2>
-    <p><strong>What it is:</strong> Urun ekibi teslimat akislarini hizlandiran otomasyon seti.</p>
-    <p><strong>Problem solved:</strong> Manuel operasyon adimlari ve geciken release pencereleri.</p>
-    <p><strong>My role:</strong> Product-technical bridge, implementation and rollout.</p>
-    <p><strong>Core technologies:</strong> API integrations, workflow engine, deployment scripts.</p>
-    <p><strong>Status / maturity:</strong> Pilot.</p>
-  </article>
-
-  <article class="card span-6">
-    <h2>Legacy Modernization Track</h2>
-    <p><strong>What it is:</strong> Eski uygulama parcaciklarini asamali modernizasyon programi.</p>
-    <p><strong>Problem solved:</strong> Teknik borc nedeniyle artis gosteren degisiklik maliyeti.</p>
-    <p><strong>My role:</strong> Technical planning, risk control, migration sequencing.</p>
-    <p><strong>Core technologies:</strong> Service refactor patterns, containerization, CI checks.</p>
-    <p><strong>Status / maturity:</strong> Archive.</p>
-  </article>
-</div>
+<section class="section-block">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">Öne Çıkan</p>
+      <h2 class="section-title">Freelance ve platform ürünleri</h2>
+      <p class="section-text">Fintech kimlik doğrulama servisi ve modüler monolith yaklaşımıyla geliştirilen lojistik platformu.</p>
+    </div>
+  </div>
+  <div class="grid">
+    {% for project in projects %}
+      <article class="project wide">
+        <div class="project-head">
+          <h2 class="project-title">
+            {{ project.name }}
+            <small>{{ project.client }} · {{ project.stack }}</small>
+          </h2>
+          <span class="project-status {% if project.status_tr == 'Active Development' %}active{% endif %}">{{ project.status_tr }}</span>
+        </div>
+        <p class="project-summary">{{ project.summary_tr }}</p>
+        <div class="project-meta">
+          <div>Rol<strong>{{ project.role_tr }}</strong></div>
+          <div>Stack<strong>{{ project.stack }}</strong></div>
+          <div>Status<strong>{{ project.status_tr }}</strong></div>
+        </div>
+        <ul class="project-bullets">
+          {% for b in project.bullets_tr %}
+            <li>{{ b }}</li>
+          {% endfor %}
+        </ul>
+        <div class="chip-row">
+          {% for tag in project.tags %}
+            <span>{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% if project.link %}
+          <a class="project-link" href="{{ project.link }}" target="_blank" rel="noreferrer">
+            {{ project.link_label }}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</section>
 
 <section class="section-block">
-  <p class="eyebrow">Next Phase</p>
-  <h2 class="section-title">Project detail pages planlandi, Phase 1'de yayinlanmiyor</h2>
-  <p class="section-text">Bir sonraki fazda her proje icin baglam, kararlar, trade-offlar ve sonuc metrikleri iceren detay sayfalari acilacak.</p>
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">Kurumsal Deneyim</p>
+      <h2 class="section-title">Şirketlerde teslim ettiğim sistemler</h2>
+      <p class="section-text">Kronos Energy, Netline, Publant ve Teknoloji Uzmanım süreçlerinde yürüttüğüm teknik sorumluluklar.</p>
+    </div>
+  </div>
+  <ol class="timeline" style="list-style:none; padding:0;">
+    {% for job in experience %}
+      <li class="timeline-item {% if job.current %}current{% endif %}">
+        <div class="timeline-head">
+          <h3 class="timeline-role">{{ job.role_tr }} · <span class="timeline-company">{{ job.company }}</span></h3>
+          <span class="timeline-period">{{ job.start }} – {{ job.end_tr }}</span>
+        </div>
+        <ul class="timeline-bullets">
+          {% for b in job.bullets_tr %}
+            <li>{{ b }}</li>
+          {% endfor %}
+        </ul>
+        <div class="chip-row">
+          {% for tag in job.tags %}
+            <span>{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section class="section-block">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">Sıradaki Adım</p>
+      <h2 class="section-title">Benzer bir ihtiyacı birlikte çalışalım</h2>
+      <p class="section-text">Backend, mimari ya da ERP/CRM entegrasyonu gerektiren bir sistem planlıyorsan, kapsam-hedef-zaman netliğiyle bana yazabilirsin.</p>
+    </div>
+  </div>
   <div class="cta-row">
-    <a class="button button-secondary" href="/contact/">Benzer bir ihtiyaci konusalim</a>
+    <a class="button button-primary" href="/contact/">İletişim</a>
+    <a class="button button-secondary" href="/expertise/">Stack'i İncele</a>
   </div>
 </section>

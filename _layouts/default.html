@@ -6,10 +6,12 @@
   </head>
   <body>
     <div class="background-layer" aria-hidden="true"></div>
+    <a class="skip-link" href="#content" style="position:absolute;left:-9999px;top:0;">Skip to content</a>
     {% include header.html %}
     <main id="content" class="shell page-shell">
       {{ content }}
     </main>
     {% include footer.html %}
+    <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
   </body>
 </html>

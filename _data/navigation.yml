@@ -1,23 +1,23 @@
 tr:
-  - title: Home
+  - title: Ana Sayfa
     url: /
-  - title: About
-    url: /about/
-  - title: Projects
+  - title: Notlar
+    url: /notes/
+  - title: Projeler
     url: /projects/
-  - title: Expertise
-    url: /expertise/
-  - title: Contact
+  - title: Özgeçmiş
+    url: /cv/
+  - title: İletişim
     url: /contact/
 
 en:
   - title: Home
     url: /en/
-  - title: About
-    url: /en/about/
+  - title: Notes
+    url: /en/notes/
   - title: Projects
     url: /en/projects/
-  - title: Expertise
-    url: /en/expertise/
+  - title: CV
+    url: /en/cv/
   - title: Contact
     url: /en/contact/

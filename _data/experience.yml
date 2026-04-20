@@ -1,0 +1,77 @@
+- company: Kronos Energy
+  role_tr: Senior Software Developer
+  role_en: Senior Software Developer
+  start: "Aralık 2024"
+  start_en: "December 2024"
+  end_tr: "Halen"
+  end_en: "Present"
+  current: true
+  bullets_tr:
+    - "RabbitMQ, MassTransit ve saga orchestration yapılarıyla mikroservisler arasında dağıtık işlem yönetimi geliştirdim; event-driven modelle servisler arası veri akışını yönettim."
+    - "gRPC tabanlı servisler arası haberleşme altyapıları geliştirerek yüksek performanslı iletişim senaryolarını hayata geçirdim."
+    - "C# ve .NET tarafında SOLID prensiplerine uygun, asenkron ve sürdürülebilir backend yapıları geliştirdim."
+    - "Docker ile servis konteynerizasyonu sağladım; loglama, hata yönetimi ve retry mekanizmaları için altyapı standartları oluşturdum."
+    - "STM32 tabanlı gömülü sistemlerle haberleşen özel TCP server uygulamaları geliştirerek donanım-yazılım entegrasyonunu gerçekleştirdim."
+    - "Gerçek zamanlı veri işleme, kuyruklama ve protokol tabanlı iletişim çözümleriyle operasyonel sistem akışlarını yönettim."
+  bullets_en:
+    - "Built distributed transaction management across microservices using RabbitMQ, MassTransit, and saga orchestration; managed inter-service data flow with an event-driven model."
+    - "Designed gRPC-based inter-service communication layers, enabling high-performance service-to-service scenarios."
+    - "Developed asynchronous, sustainable backend structures in C# / .NET aligned with SOLID principles."
+    - "Containerized services with Docker and established infrastructure standards for logging, error handling, and retry mechanisms."
+    - "Delivered custom TCP server applications that communicate with STM32-based embedded systems, bridging hardware and software."
+    - "Orchestrated operational flows with real-time data processing, queuing, and protocol-driven communication."
+  tags: [".NET", "C#", "RabbitMQ", "MassTransit", "Saga", "gRPC", "Docker", "TCP", "Embedded"]
+
+- company: Netline / Netgo Yazılım
+  role_tr: Full-Stack Developer
+  role_en: Full-Stack Developer
+  start: "Temmuz 2024"
+  start_en: "July 2024"
+  end_tr: "Eylül 2024"
+  end_en: "September 2024"
+  current: false
+  bullets_tr:
+    - "Şirket içi bilet yönetim sistemini .NET Core MVC ve Onion Architecture ile geliştirdim; Microsoft Identity üzerinden kimlik doğrulama ve yetkilendirme süreçlerini yapılandırdım."
+    - "CQRS ve MediatR kullanarak yüksek işlem yüküne uygun modüller geliştirdim ve performans iyileştirmeleri sağladım."
+    - "Logo ERP verileri üzerinde T-SQL ile dinamik raporlama ve veri erişim süreçlerini optimize ettim."
+  bullets_en:
+    - "Built an internal ticket management system on .NET Core MVC with Onion Architecture; configured authentication and authorization via Microsoft Identity."
+    - "Designed modules tuned for high-throughput workloads using CQRS and MediatR, delivering measurable performance improvements."
+    - "Optimized dynamic reporting and data-access paths over Logo ERP data using T-SQL."
+  tags: [".NET Core", "Onion Architecture", "CQRS", "MediatR", "Microsoft Identity", "T-SQL", "Logo ERP"]
+
+- company: Publant Technology
+  role_tr: Full-Stack Developer
+  role_en: Full-Stack Developer
+  start: "Şubat 2024"
+  start_en: "February 2024"
+  end_tr: "Temmuz 2024"
+  end_en: "July 2024"
+  current: false
+  bullets_tr:
+    - "N-katmanlı mimariye uygun ölçeklenebilir ve modüler uygulamalar geliştirdim."
+    - "LinkedIn, Instagram ve Facebook API entegrasyonları geliştirerek otomasyon süreçlerini hayata geçirdim."
+    - "ERP ve CRM entegrasyonları geliştirerek QuickBooks muhasebe süreçlerinde verim artışı sağladım; sigorta ürünü için ana mimariyi tasarlayıp yazılım yaşam döngüsünün farklı aşamalarında görev aldım."
+  bullets_en:
+    - "Shipped scalable, modular applications on an n-tier architecture."
+    - "Built integrations for LinkedIn, Instagram, and Facebook APIs to automate marketing and content pipelines."
+    - "Delivered ERP/CRM integrations including QuickBooks accounting flows; designed core architecture for an insurance product and contributed across the full software lifecycle."
+  tags: ["ERP", "CRM", "QuickBooks", "API Integration", "N-Tier"]
+
+- company: Teknoloji Uzmanım
+  role_tr: Software Developer
+  role_en: Software Developer
+  start: "Eylül 2021"
+  start_en: "September 2021"
+  end_tr: "Ocak 2024"
+  end_en: "January 2024"
+  current: false
+  bullets_tr:
+    - "ERP projelerinde ana mimariyi tasarlayarak iş süreçlerinin dijital dönüşümüne katkı sundum; gereksinim analizi, teknik analiz ve SRS dokümantasyonu süreçlerinde görev aldım."
+    - "ASP.NET, .NET Core, C#, JavaScript ve ORM araçlarıyla esnek, genişletilebilir ve modüler web/masaüstü uygulamaları geliştirdim."
+    - "Modüllerin tasarım, geliştirme ve test süreçlerini yöneterek projelerin zamanında teslim edilmesini sağladım."
+  bullets_en:
+    - "Designed core architecture for ERP projects and contributed to digital transformation across business processes; led requirements analysis, technical analysis, and SRS documentation."
+    - "Built flexible, extensible, modular web and desktop applications using ASP.NET, .NET Core, C#, JavaScript, and ORM tooling."
+    - "Owned module design, development, and testing to keep deliveries on schedule."
+  tags: ["ASP.NET", ".NET Core", "C#", "ERP", "ORM"]

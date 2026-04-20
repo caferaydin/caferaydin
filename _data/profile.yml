@@ -1,0 +1,41 @@
+name: Cafer Aydın
+role_tr: Senior Software Developer
+role_en: Senior Software Developer
+tagline_tr: Java & .NET · Backend & Distributed Systems
+tagline_en: Java & .NET · Backend & Distributed Systems
+location: İstanbul, Türkiye
+email: zng.caferaydin@gmail.com
+phone: "+90 542 109 29 33"
+github: https://github.com/caferaydin
+github_handle: caferaydin
+linkedin: https://www.linkedin.com/in/caferaydin
+linkedin_handle: caferaydin
+years_experience: "4+"
+
+summary_tr: >-
+  Polyglot backend developer. .NET ekosisteminde 4+ yıl kurumsal yazılım
+  deneyimine sahibim; Java / Spring Boot tarafında aktif olarak üretim
+  yapıyorum. Kurumsal iş uygulamaları, mikroservis mimarileri, ERP/CRM
+  entegrasyonları ve dağıtık sistemler üzerinde çalıştım. Clean architecture,
+  güvenlik pratikleri ve operasyonel sürdürülebilirlik odağıyla, iş
+  ihtiyaçlarını uçtan uca teknik çözüme dönüştürüyorum.
+
+summary_en: >-
+  Polyglot backend developer with 4+ years of enterprise experience in the
+  .NET ecosystem and active production work on Java / Spring Boot. Focused on
+  enterprise business applications, microservice architectures, ERP/CRM
+  integrations, and distributed systems. I translate business needs into
+  end-to-end technical solutions with a focus on clean architecture, security
+  practices, and operational sustainability.
+
+identity_tr:
+  - Senior Software Developer
+  - Backend Engineer
+  - Distributed Systems Builder
+  - Clean Architecture Advocate
+
+identity_en:
+  - Senior Software Developer
+  - Backend Engineer
+  - Distributed Systems Builder
+  - Clean Architecture Advocate

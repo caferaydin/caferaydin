@@ -1,0 +1,61 @@
+- slug: nationality-verification
+  name: Nationality Verification Service
+  client: Colendi
+  stack: Spring Boot 3 / Java 17
+  status_tr: Production
+  status_en: Production
+  role_tr: Freelance Backend Developer
+  role_en: Freelance Backend Developer
+  link: https://github.com/caferaydin/NationalityVerification
+  link_label: github.com/caferaydin/NationalityVerification
+  summary_tr: >-
+    Colendi fintech ekosistemi için geliştirilen, kimlik doğrulama ve belge
+    yükleme akışlarını yöneten REST servis. KVKK uyumlu güvenlik katmanı,
+    correlation ID tabanlı izlenebilirlik ve production-ready monitoring
+    üzerine kurulu.
+  summary_en: >-
+    A REST service built for the Colendi fintech ecosystem that orchestrates
+    identity verification and document upload flows. Designed around a KVKK
+    compliant security layer, correlation-ID observability, and
+    production-ready monitoring.
+  bullets_tr:
+    - "Spring Boot 3.x ve Java 17 ile clean architecture yaklaşımında katmanlı mimari (api / application / infrastructure / common) geliştirdim."
+    - "TCKN masking, HMAC bazlı hash ve raw veri loglanmasını engelleyen KVKK uyumlu güvenlik katmanı tasarladım."
+    - "Correlation ID tabanlı MDC logging, global exception handling ve standart hata zarfı ile cross-cutting altyapı oluşturdum."
+    - "Multipart file upload (boyut/MIME validation), UUID tabanlı depolama, webhook ve QR endpoint entegrasyonlarını hayata geçirdim."
+    - "Spring Boot Actuator ile health check ve production-ready monitoring konfigürasyonunu uyguladım."
+  bullets_en:
+    - "Layered clean architecture (api / application / infrastructure / common) built on Spring Boot 3.x and Java 17."
+    - "KVKK compliant security layer with TCKN masking, HMAC hashing, and strict prevention of raw-data logging."
+    - "Cross-cutting infrastructure with correlation-ID MDC logging, global exception handling, and standardized error envelopes."
+    - "Multipart file upload with size/MIME validation, UUID-based storage, webhook callbacks, and QR endpoint integrations."
+    - "Production-ready monitoring via Spring Boot Actuator health checks and observability configuration."
+  tags: ["Spring Boot 3", "Java 17", "Clean Architecture", "REST", "KVKK", "MDC Logging", "Actuator"]
+
+- slug: nakliye360
+  name: Nakliye360
+  client: Logistics Platform
+  stack: .NET 10 / PostgreSQL
+  status_tr: Active Development
+  status_en: Active Development
+  role_tr: Architecture & Backend Lead
+  role_en: Architecture & Backend Lead
+  link: null
+  link_label: null
+  summary_tr: >-
+    Modüler monolith yaklaşımında, clean architecture ve domain odaklı tasarım
+    prensipleriyle geliştirilen lojistik yönetim platformu. Her modül için
+    ayrık schema ve bağımsız geliştirme modeli uygulandı.
+  summary_en: >-
+    A logistics management platform engineered as a modular monolith on clean
+    architecture and domain-driven design principles. Each module owns its
+    schema and evolves independently.
+  bullets_tr:
+    - "Modüler ve sürdürülebilir bir backend mimarisi geliştirdim; her modül için ayrık schema yapısı ve bağımsız geliştirme modelini uyguladım."
+    - "Shipment, carrier, pricing ve identity alanlarını domain odaklı sınırlarla tasarladım ve geliştirdim."
+    - "Mobil uygulama ile uyumlu backend servis yapılarını ve yönetim paneli altyapısını oluşturdum; ileride mikroservise evrilebilme hedefiyle temel altyapıyı kurdum."
+  bullets_en:
+    - "Built a modular, maintainable backend with isolated schemas per module and independent delivery tracks."
+    - "Designed shipment, carrier, pricing, and identity subdomains with explicit domain boundaries."
+    - "Delivered backend services and an admin panel compatible with the mobile app, with a foundation that can evolve into microservices."
+  tags: [".NET 10", "PostgreSQL", "Modular Monolith", "Clean Architecture", "DDD"]

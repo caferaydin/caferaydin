@@ -1,8 +1,8 @@
-title: Cafer Aydin
-email: hello@caferaydin.com
+title: Cafer Aydın
+email: zng.caferaydin@gmail.com
 description: >-
-  Official personal brand site of Cafer Aydin - Software Engineer,
-  System Builder, Product Developer.
+  Cafer Aydın — Senior Software Developer. Java & .NET backend,
+  distributed systems, microservice architectures and ERP/CRM integrations.
 url: "https://caferaydin.github.io"
 baseurl: ""
 lang: tr
@@ -12,9 +12,19 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+exclude:
+  - Cafer_Aydin.pdf
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
 collections:
-  pages_en:
-    output: false
+  notes:
+    output: true
+    permalink: /notes/:path/
+  notes_en:
+    output: true
+    permalink: /en/notes/:path/
 
 defaults:
   - scope:
@@ -22,10 +32,15 @@ defaults:
     values:
       layout: default
       image: /assets/images/og-default.jpg
-
-planned_sections:
-  - CV / Resume
-  - Blog / Notes
-  - Case Studies
-  - Speaking / Media
-  - Project Detail Pages
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: note
+      lang: tr
+  - scope:
+      path: ""
+      type: notes_en
+    values:
+      layout: note
+      lang: en

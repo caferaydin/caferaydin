@@ -1,102 +1,132 @@
 ---
-title: Home
-description: Cafer Aydin official personal brand site - Software Engineer, System Builder, Product Developer.
+title: Ana Sayfa
+description: Cafer Aydın — Senior Software Developer. Claude ve AI terminolojisi üzerine kısa notlar, production backend projeleri ve dağıtık sistem deneyimi.
 lang: tr
 en_url: /en/
 permalink: /
 ---
 
+{% assign profile = site.data.profile %}
+{% assign notes = site.notes | sort: "date" | reverse %}
+{% assign projects = site.data.projects %}
+
 <section class="hero">
-  <p class="eyebrow">Official Personal Brand Site</p>
-  <h1>Cafer Aydin - Software Engineer, System Builder, Product Developer</h1>
-  <p class="lead">Yazilim muhendisligi, sistem mimarisi ve urun gelistirmeyi tek bir teslimat disipliniyle birlestiriyorum. Odak noktam: guvenilir, olceklenebilir ve urun etkisi yaratan sistemler.</p>
-  <div class="cta-row">
-    <a class="button button-primary" href="/projects/">Projeleri Incele</a>
-    <a class="button button-secondary" href="/contact/">Iletisime Gec</a>
+  <div class="hero-grid">
+    <div>
+      <p class="eyebrow">Senior Software Developer · İstanbul</p>
+      <h1>Backend & dağıtık sistemler kurarım, <span class="gradient" data-rotator="Claude|Agentic AI|LLM|Multi-agent|Prompt Engineering">Claude</span> üzerine öğrendiklerimi yazarım.</h1>
+      <p class="lead">Java & .NET tarafında kurumsal yazılım üretirken, günlük pratikte karşılaştığım AI / LLM kavramlarını kısa ve öz notlar hâlinde topluyorum. Bu site üç şey yapar: <strong>notlar</strong>, <strong>projeler</strong> ve <strong>özgeçmiş</strong>.</p>
+      <div class="cta-row">
+        <a class="button button-primary" href="/notes/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          Notları Oku
+        </a>
+        <a class="button button-secondary" href="/projects/">Projeler</a>
+        <a class="button button-ghost" href="/cv/">Özgeçmiş</a>
+      </div>
+      <div class="hero-meta">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>{{ profile.location }}</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg>{{ profile.years_experience }} yıl deneyim</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>UTC+3</span>
+      </div>
+    </div>
+    <div class="terminal" aria-hidden="true">
+      <div class="terminal-bar">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <span class="title">~/notes — zsh</span>
+      </div>
+      <div class="terminal-body" data-typewriter>
+        <div><span class="prompt">$</span> ls notes/</div>
+        <div><span class="key">token-nedir.md</span></div>
+        <div><span class="key">context-window.md</span></div>
+        <div><span class="key">prompt-caching.md</span></div>
+        <div><span class="key">tool-use.md</span></div>
+        <div><span class="key">extended-thinking.md</span></div>
+        <div><span class="key">agentic-loop.md</span></div>
+        <div><span class="com"></span></div>
+        <div><span class="prompt">$</span> cat notes/prompt-caching.md | head -1</div>
+        <div><span class="str">"Tekrar eden büyük promptları</span></div>
+        <div><span class="str">&nbsp;~%90 daha ucuza okumanın yolu."</span></div>
+        <div><span class="prompt">$</span> <span class="caret"></span></div>
+      </div>
+    </div>
   </div>
 </section>
 
 <section class="section-block">
-  <p class="eyebrow">Trust / Identity Strip</p>
-  <h2 class="section-title">Senior-level engineering credibility with execution focus</h2>
-  <p class="section-text">Teknik karar kalitesi, sistem dusuncesi ve urun teslimatini birlikte yuruturum. Is birligi modelim: net beklenti, olculebilir ilerleme, operasyonel guven.</p>
-  <div class="chip-row">
-    <span>Senior Software Engineer</span>
-    <span>System Builder</span>
-    <span>Product Developer</span>
-    <span>Technical Advisor</span>
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">Son Notlar</p>
+      <h2 class="section-title">Claude & AI terminolojisi</h2>
+      <p class="section-text">Günlük LLM pratiğinde karşıma çıkan kavramlar — tek oturumda okunacak kısa kartlar.</p>
+    </div>
+    <a class="button button-ghost" href="/notes/">Tüm Notlar →</a>
+  </div>
+  <div class="note-grid">
+    {% for note in notes limit: 6 %}
+      <a class="note-card" href="{{ note.url | relative_url }}">
+        <div class="note-card-head">
+          <span class="note-card-date">{{ note.date | date: "%d %b %Y" }}</span>
+          {% if note.reading_time %}<span class="note-card-read">{{ note.reading_time }}</span>{% endif %}
+        </div>
+        <h3 class="note-card-title">{{ note.title }}</h3>
+        <p class="note-card-excerpt">{{ note.excerpt }}</p>
+        <div class="note-card-tags">
+          {% for t in note.tags limit: 3 %}<span>{{ t }}</span>{% endfor %}
+        </div>
+        <span class="note-card-arrow">Devamını oku →</span>
+      </a>
+    {% endfor %}
   </div>
 </section>
 
 <section class="section-block">
-  <p class="eyebrow">Expertise Highlights</p>
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">İş</p>
+      <h2 class="section-title">Son production teslimatları</h2>
+      <p class="section-text">Günlük işimin karşılığı: Java / .NET backend, mikroservis, ERP/CRM entegrasyonları.</p>
+    </div>
+    <a class="button button-ghost" href="/projects/">Tüm Projeler →</a>
+  </div>
   <div class="grid">
-    <article class="card span-4">
-      <h3>Backend & Platform Engineering</h3>
-      <p>Bakimi kolay, performansli ve guvenilir backend/platform temeli.</p>
-    </article>
-    <article class="card span-4">
-      <h3>System Architecture</h3>
-      <p>Trade-off bilinciyle olceklenebilir mimari kararlar ve gecis planlari.</p>
-    </article>
-    <article class="card span-4">
-      <h3>Product Development</h3>
-      <p>Teknik yonu urun hedefiyle hizalayarak cikti ureten yaklasim.</p>
-    </article>
-  </div>
-  <div class="cta-row">
-    <a class="button button-secondary" href="/expertise/">Tum Uzmanlik Alanlari</a>
-  </div>
-</section>
-
-<section class="section-block">
-  <p class="eyebrow">Selected Projects</p>
-  <div class="grid">
-    <article class="card span-6">
-      <h3>Platform Core Rebuild</h3>
-      <p>Dagitik bir urun altyapisini moduler ve olceklenebilir bir cekirdege tasiyan yeniden yapilandirma inisiyatifi.</p>
-      <p class="meta-line"><strong>Status:</strong> Production</p>
-    </article>
-    <article class="card span-6">
-      <h3>Operational Visibility Initiative</h3>
-      <p>Uretim ortami sorun tespit suresini azaltmak icin telemetry-first yaklasimla gozlemlenebilirlik katmani kurulumu.</p>
-      <p class="meta-line"><strong>Status:</strong> Scaling</p>
-    </article>
-  </div>
-  <div class="cta-row">
-    <a class="button button-secondary" href="/projects/">Tum Projeler</a>
+    {% for project in projects %}
+      <article class="project half">
+        <div class="project-head">
+          <h3 class="project-title">
+            {{ project.name }}
+            <small>{{ project.client }} · {{ project.stack }}</small>
+          </h3>
+          <span class="project-status {% if project.status_tr == 'Active Development' %}active{% endif %}">{{ project.status_tr }}</span>
+        </div>
+        <p class="project-summary">{{ project.summary_tr }}</p>
+        <div class="chip-row">
+          {% for tag in project.tags limit: 5 %}
+            <span>{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% if project.link %}
+          <a class="project-link" href="{{ project.link }}" target="_blank" rel="noreferrer">
+            {{ project.link_label }}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        {% endif %}
+      </article>
+    {% endfor %}
   </div>
 </section>
 
 <section class="section-block">
-  <p class="eyebrow">Working Approach</p>
-  <h2 class="section-title">Net kapsam, sistematik kararlar, olculebilir teslimat</h2>
-  <ul class="inline-list">
-    <li>Problemi netlestir, teknik karari gerekcesiyle ver.</li>
-    <li>Riskleri erken gor, asamali teslimatla yonet.</li>
-    <li>Sistem kalitesi ve urun hizini birlikte optimize et.</li>
-  </ul>
-  <div class="cta-row">
-    <a class="button button-secondary" href="/about/">Yaklasimimi Gor</a>
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">İletişim</p>
+      <h2 class="section-title">Yeni bir sistem, danışmanlık ya da fikir alışverişi</h2>
+      <p class="section-text">Kısa bir kapsam-hedef-zaman notu en hızlı geri dönüşü sağlar.</p>
+    </div>
   </div>
-</section>
-
-<section class="section-block">
-  <p class="eyebrow">Short About Summary</p>
-  <h2 class="section-title">Muhendislik bakisini urun degerine donusturen bir calisma modeli</h2>
-  <p class="section-text">Kurumsal ciddiyeti koruyup gereksiz karmasayi azaltarak, teknik ekiplerin daha guvenli ve hizli teslimat yapmasini hedeflerim.</p>
   <div class="cta-row">
-    <a class="button button-secondary" href="/about/">About</a>
-  </div>
-</section>
-
-<section class="section-block">
-  <p class="eyebrow">Contact CTA</p>
-  <h2 class="section-title">Proje, sistem veya teknik danismanlik ihtiyaclariniz icin iletisime gecin</h2>
-  <p class="section-text">Kisa bir kapsam-hedef-zaman bilgisiyle yazmaniz, en hizli ve dogru geri donusu saglar.</p>
-  <div class="cta-row">
-    <a class="button button-primary" href="mailto:hello@caferaydin.com">E-posta</a>
-    <a class="button button-secondary" href="https://github.com/caferaydin" target="_blank" rel="noreferrer">GitHub</a>
-    <a class="button button-secondary" href="https://www.linkedin.com/in/caferaydin" target="_blank" rel="noreferrer">LinkedIn</a>
+    <a class="button button-primary" href="mailto:{{ profile.email }}">E-posta</a>
+    <a class="button button-secondary" href="{{ profile.github }}" target="_blank" rel="noreferrer">GitHub</a>
+    <a class="button button-secondary" href="{{ profile.linkedin }}" target="_blank" rel="noreferrer">LinkedIn</a>
   </div>
 </section>
